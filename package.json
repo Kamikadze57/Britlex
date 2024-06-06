@@ -2,7 +2,7 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://Kamikadze57.github.io/Britlex",
+  "homepage": "https://kamikadze57.github.io/Britlex/",
   "scripts": {
     "start": "parcel src/*.html --cache-dir .cache",
     "build": "parcel build src/*.html --public-url /Britlex/"
