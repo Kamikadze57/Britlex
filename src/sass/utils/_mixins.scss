@@ -1,4 +1,9 @@
 @mixin flex($gap) {
-    display: flex;
-    gap: $gap;
+  display: flex;
+  gap: $gap;
+}
+@mixin text($font-size) {
+  color: $text-color;
+  font-size: $font-size;
+  font-weight: 400;
 }

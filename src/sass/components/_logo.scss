@@ -1,16 +1,25 @@
 .logo {
+  color: $add-black;
+  font-size: 24px;
+  transition: color 250ms ease-in-out;
+  &:hover,
+  &:focus {
+    color: $add-grey;
+  }
+  &:hover .logo__grey,
+  &:focus .logo__grey {
     color: $add-black;
-    font-size: 24px;
+  }
+  @media screen and (min-width: 992px) {
+    font-size: 30px;
+  }
 
-    @media screen and (min-width: 992px) {
-        font-size: 30px;
-    }
-
-    @media screen and (min-width: 1340px) {
-        font-size: 36px;
-    }
+  @media screen and (min-width: 1340px) {
+    font-size: 36px;
+  }
 }
 
 .logo__grey {
-    color: $add-gray;
+  transition: color 250ms ease-in-out;
+  color: $add-grey;
 }

@@ -3,6 +3,8 @@
 @import './utils/vars';
 @import './utils/mixins';
 @import './utils/placeholders';
+@import './components/logo';
+@import './components/title';
 @import './layout/header';
 @import './layout/hero';
 @import './layout/skills';
@@ -10,6 +12,4 @@
 @import './layout/pricing';
 @import './layout/contact_us';
 @import './layout/footer';
-@import './components/logo';
-@import './components/title';
 @import './layout/mobile_menu';
