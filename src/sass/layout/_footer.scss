@@ -44,7 +44,11 @@
   }
 }
 .footer__list {
-  @include flex(5px);
+  @include flex(2px);
+  align-items: center;
+  @media screen and (min-width: 575px) {
+    @include flex(5px);
+  }
 }
 .footer__link {
   @include text(11px);
