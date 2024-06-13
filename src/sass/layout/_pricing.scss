@@ -20,11 +20,15 @@
 .pricing__list {
   @include flex(70px);
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   @media screen and (min-width: 575px) {
     gap: 71px;
   }
   @media screen and (min-width: 767px) {
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     gap: 35px;
   }
   @media screen and (min-width: 992px) {
@@ -49,6 +53,29 @@
     margin-bottom: 55px;
   }
 }
+.pricing__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 277px;
+  @media screen and (min-width: 575px) {
+    width: 390px;
+  }
+  @media screen and (min-width: 767px){
+    width: 223px;
+  }
+  @media screen and (min-width: 992px) {
+    width: 293px;
+  }
+  @media screen and (min-width: 1340px) {
+    width: 425px;
+  }
+}
+.pricing-info__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .pricing-list__title {
   color: $main-color;
   font-size: 18px;
@@ -60,6 +87,7 @@
   }
   @media screen and (min-width: 767px) {
     font-size: 20px;
+    text-align: start;
   }
   @media screen and (min-width: 992px) {
     font-size: 22px;
@@ -70,13 +98,62 @@
 }
 .pricing-list__text {
   @include text(13px);
+  text-align: center;
+  margin-bottom: 33px;
+  line-height: 1.6;
   @media screen and (min-width: 575px) {
     font-size: 14px;
+    margin-bottom: 31px;
+  }
+  @media screen and (min-width: 767px){
+    text-align: start;
+    margin-bottom: 35px;
   }
   @media screen and (min-width: 992px) {
     font-size: 16px;
   }
   @media screen and (min-width: 1340px) {
     font-size: 20px;
+    width: 425px;
+  }
+}
+.pricing-price__wrapper {
+  width: 179px;
+  height: 37px;
+  border-radius: 5px;
+  background-color: #EEEEEE;
+  @include flex(8px);
+  align-items: center;
+  justify-content: center;
+  @media screen and (min-width: 575px) {
+    width: 205px;
+  height: 45px;
+  }
+  @media screen and (min-width: 1340px) {
+    width: 240px;
+  }
+}
+.pricing-price__value {
+  font-size: 18px;
+  font-weight: 400;
+  color: $main-color;
+  @media screen and (min-width: 575px) {
+    font-size: 22px;
+  }
+  @media screen and (min-width: 992px) {
+    font-size: 24px;
+  }
+  @media screen and (min-width: 1340px) {
+   font-size: 30px;
+  }
+}
+.pricing-price__text {
+  font-size: 14px;
+  color: #546269;
+  @media screen and (min-width: 575px) {
+    font-size: 16px;
+  }
+  @media screen and (min-width: 1340px) {
+    font-size: 18px;
   }
 }
