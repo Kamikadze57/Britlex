@@ -93,12 +93,6 @@
     align-content: space-between;
     height: 271px;
   }
-  @media screen and (min-width: 767px) {
-    height: 169px;
-  }
-  @media screen and (min-width: 992px) {
-    height: 163px;
-  }
 }
 .skills__text {
   color: $text-color;
@@ -127,6 +121,11 @@
   font-size: 14px;
   font-weight: 500;
   line-height: normal;
+  transition: all 250ms ease-in-out;
+  &:hover,
+  &:focus {
+  background-color: $accent-color;
+  }
   @media screen and (min-width: 575px) {
     padding: 14px 54px;
     margin-top: 0;
