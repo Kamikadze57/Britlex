@@ -8,3 +8,15 @@
     display: none;
   }
 }
+.mobile-menu__icon {
+  width: 35px;
+  height: 20px;
+  @media screen and (min-width: 575px) {
+    width: 42px;
+    height: 25px;    
+  }
+  @media screen and (min-width: 767px) {
+    width: 30px;
+    height: 17px;    
+  }
+}
