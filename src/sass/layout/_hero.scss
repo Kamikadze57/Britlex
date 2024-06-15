@@ -1,35 +1,46 @@
 .hero {
-    margin-top: 125px;
+  margin-top: 125px;
 }
 .hero__list {
-    @include flex(125px)
+  @include flex(125px);
 }
 .hero__title {
-    color: $add-black;
-    font-size: 64px;
-    font-weight: 600;
-    line-height: 80px;
-    text-align: left;
+  color: $add-black;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 80px;
+  text-align: left;
+  max-width: 325px;
 }
 .hero__text {
-    @include text(24px);
-    margin-top: 40px;
-    line-height: 36px;
-    text-align: left;
+  @include text(24px);
+  margin-top: 40px;
+  line-height: 36px;
+  text-align: left;
+  max-width: 520.3px;
 }
 .hero__button {
-    margin-top: 93px;
-    padding: 32px 118px;
-    color: white;
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 54px;
-    text-align: left;
-    border-radius: 15px;
-    border-radius: 15px;
-    background: rgb(38, 50, 56);
+  margin-top: 93px;
+  padding: 32px 118px;
+  color: white;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 54px;
+  text-align: left;
+  border: none;
+  border-radius: 15px;
+  background: $main-color;
+  &:hover,
+  &:focus {
+    background: white;
+    border: 2px solid $main-color;
+    color: $main-color;
+  }
+  &:active {
+    transform: scale(0.95);
+  }
 }
 .hero__img {
-    width: 661px;
-    height: 661px;
+  width: 661px;
+  height: 661px;
 }
