@@ -1,3 +1,20 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(7, 34, 47, 0.7);
+  opacity: 1;
+  transition: opacity 250ms ease-in-out;
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.no-scroll {
+  overflow: hidden;
+}
 .menu-open {
   display: block;
   margin-left: auto;
@@ -13,10 +30,123 @@
   height: 20px;
   @media screen and (min-width: 575px) {
     width: 42px;
-    height: 25px;    
+    height: 25px;
   }
   @media screen and (min-width: 767px) {
     width: 30px;
-    height: 17px;    
+    height: 17px;
+  }
+}
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 35px 15px;
+  background-color: #fff;
+  z-index: 999;
+  transform: translateY(100%);
+  transition: transform 250ms ease-in-out;
+  &.is-open {
+    transform: translateY(0);
+  }
+  @media screen and (min-width: 575px) {
+    padding: 50px 35px;
+  }
+  @media screen and (min-width: 767px) {
+    padding: 40px;
+    transform: translateX(-100%);
+    width: 55vw;
+    &.is-open {
+      transform: translateY(0);
+    }
+  }
+}
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 37px;
+  right: 15px;
+  border: none;
+  background-color: transparent;
+  @media screen and (min-width: 575px) {
+    top: 54px;
+    right: 23px;
+  }
+  @media screen and (min-width: 767px) {
+    top: 22px;
+    right: 15px;
+  }
+}
+.menu-toggle__icon {
+  width: 17px;
+  height: 17px;
+  transition: fill 250ms ease-in-out;
+  fill: $accent-color;
+  .menu-toggle:hover &,
+  .menu-toggle:focus & {
+    fill: $accent-color;
+  }
+  @media screen and (min-width: 575px) {
+    width: 20px;
+    height: 20px;
+  }
+}
+.mobile-menu__line {
+  height: 1px;
+  background-color: #c4c4c4;
+  margin-top: 20px;
+  margin-bottom: 48px;
+  @media screen and (min-width: 575px) {
+    margin-top: 44px;
+    margin-bottom: 35px;
+  }
+  @media screen and (min-width: 575px) {
+    margin-top: 21px;
+  }
+}
+.mobile-menu-pages {
+  @include flex(0);
+  flex-direction: column;
+}
+.mobile-menu-pages__link {
+  color: $main-color;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 65px;
+  @media screen and (min-width: 575px) {
+    font-size: 24px;
+  }
+  @media screen and (min-width: 767px) {
+    font-size: 22px;
+    line-height: 60px;
+  }
+}
+.mobile-menu__btn {
+  display: block;
+  margin: 0 auto;
+  margin-top: 70px;
+  padding: 17px 101px;
+  color: $add-black;
+  border-radius: 5px;
+  border: 2px solid #263238;
+  background: none;
+  transition: all 250ms ease-in-out;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    border: 2px solid $accent-color;
+  }
+  &:active {
+    transform: scale(0.9);
+  }
+  @media screen and (min-width: 575px) {
+    display: inline;
+    margin-top: 80px;
+    padding: 18px 117px;
+  }
+  @media screen and (min-width: 575px) {
+    margin-top: 62px;
+    padding: 16px 65px;
   }
 }
