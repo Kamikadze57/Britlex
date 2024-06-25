@@ -59,6 +59,96 @@
   @media screen and (min-width: 575px) {
     max-width: 240px;
   }
+  @media screen and (min-width: 767px) {
+    width: 224px;
+  }
+  @media screen and (min-width: 992px) {
+    width: 303px;
+  }
+}
+.skills__item--hg {
+  @media screen and (min-width: 575px) {
+    max-height: 534px;
+  }
+  @media screen and (min-width: 767px) {
+    min-height: 662px;
+  }
+}
+.skills-item__container {
+  background-color: white;
+  @media screen and (min-width: 767px) {
+    min-width: 462px;
+  }
+}
+.skills__item--bg {
+  background-color: white;
+  @media screen and (min-width: 575px) {
+    position: relative;
+  }
+  @media screen and (min-width: 767px) {
+    position: static;
+  }
+}
+.skills-item__list {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  @media screen and (min-width: 575px) {
+    gap: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 767px) {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+.skills__card {
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  @media screen and (min-width: 575px) {
+    max-height: 534px;
+  }
+  @media screen and (min-width: 767px) {
+    flex-basis: calc((100% - 10px) / 2);
+    max-height: 440px;
+  }
+  @media screen and (min-width: 992px) {
+    width: 303px;
+  }
+}
+.skills__img--mg1 {
+  @media screen and (min-width: 767px) {
+    margin-top: 31px;
+  }
+}
+// .skills__img--mg2 {
+//   @media screen and (min-width: 767px) {
+//     margin-top: 14px;
+//   }
+// }
+.skills__img--mg3 {
+  @media screen and (min-width: 767px) {
+    margin-top: 36px;
+  }
+}
+.skills__card--left {
+  @media screen and (min-width: 575px) {
+    position: absolute;
+    top: 564px;    
+    left: -270px;
+    max-width: 240px;
+  }
+  @media screen and (min-width: 767px) {
+    position: static;
+  }
+}
+.skills__card--flex {
+  @media screen and (min-width: 767px) {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+  }
 }
 .skills__wrapper {
   padding: 10px 19px 45px 13px;
@@ -72,10 +162,17 @@
     padding: 0px 13px 52px 28px;
   }
 }
+.skills__wrapper--pd {
+  @media screen and (min-width: 767px) {
+    order: -1;
+    padding-right: 0;
+    max-height: 210px;
+  }
+}
 .skills__subtitle {
   color: $main-color;
   font-size: 18px;
-  line-height: 80px;
+  margin-bottom: 12px;
   @media screen and (min-width: 767px) {
     font-size: 20px;
   }
@@ -86,6 +183,21 @@
     font-size: 30px;
   }
 }
+.skills__subtitle--mg1 {
+  @media screen and (min-width: 767px) {
+    margin-top: 20px;
+  }
+}
+.skills__subtitle--mg3 {
+  @media screen and (min-width: 767px) {
+    margin-top: 38px;
+  }
+}
+.skills__subtitle--mg4 {
+  @media screen and (min-width: 767px) {
+    margin-top: 30px;
+  }
+}
 .skills__box {
   @media screen and (min-width: 575px) {
     display: flex;
@@ -93,13 +205,32 @@
     align-content: space-between;
     height: 271px;
   }
+  @media screen and (min-width: 767px) {
+    height: 169px;
+  }
+  @media screen and (min-width: 992px) {
+    height: 134px;
+  }
+}
+.skills__box--hg1 {
+  @media screen and (min-width: 767px) {
+    height: 312px;
+  }
+}
+.skills__box--hg4 {
+  @media screen and (min-width: 767px) {
+    height: 125px;
+  }
+  @media screen and (min-width: 992px) {
+    height: 134px;
+  }
 }
 .skills__text {
   color: $text-color;
-  font-size: 13px;
+  font-size: 12px;
   line-height: normal;
   @media screen and (min-width: 575px) {
-    font-size: 12px;
+    font-size: 13px;
   }
   @media screen and (min-width: 767px) {
     font-size: 13px;
@@ -109,6 +240,14 @@
   }
   @media screen and (min-width: 1340px) {
     font-size: 16px;
+  }
+}
+.skills__text--wd {
+  @media screen and (min-width: 767px) {
+    max-width: 250px;
+  }
+  @media screen and (min-width: 992px) {
+    min-width: 287px;
   }
 }
 .skills__btn {
@@ -124,7 +263,8 @@
   transition: all 250ms ease-in-out;
   &:hover,
   &:focus {
-  background-color: $accent-color;
+    background-color: $accent-color;
+    cursor: pointer;
   }
   @media screen and (min-width: 575px) {
     padding: 14px 54px;
@@ -136,10 +276,20 @@
   }
   @media screen and (min-width: 992px) {
     font-size: 18px;
-    padding: 16px 41px 19px 42px; 
+    padding: 14px 41px 17px 42px;
+    margin-top: 22px;
   }
   @media screen and (min-width: 1340px) {
     font-size: 20px;
-    padding: 15px 51px 15px 52px; 
+    padding: 15px 51px 15px 52px;
+  }
+}
+.skills__btn--mg {
+  @media screen and (min-width: 992px) {
+    margin-top: 16px;
+  }
+  @media screen and (min-width: 1340px) {
+    font-size: 20px;
+    padding: 15px 51px 15px 52px;
   }
 }
