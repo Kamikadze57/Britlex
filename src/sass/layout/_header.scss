@@ -1,56 +1,45 @@
 .header {
   padding-top: 36px;
   padding-bottom: 36px;
-
   @media screen and (min-width: 575px) {
     padding-top: 40px;
     padding-bottom: 20px;
   }
-
   @media screen and (min-width: 767px) {
     padding-top: 40px;
     padding-bottom: 40px;
   }
-
   @media screen and (min-width: 992px) {
     padding-top: 30px;
     padding-bottom: 30px;
   }
-
   @media screen and (min-width: 1340px) {
     padding-top: 55px;
     padding-bottom: 55px;
   }
 }
-
 .header__container {
   display: flex;
   align-items: center;
 }
-
 .mobile-menu__icon {
   display: block;
   width: 30px;
   height: 17px;
 }
-
 .nav {
   display: none;
-
   @media screen and (min-width: 992px) {
     display: block;
     margin-left: 110px;
   }
-
   @media screen and (min-width: 1340px) {
     margin-left: 253px;
   }
 }
-
 .nav__list {
   @include flex(40px);
 }
-
 .nav__link {
   color: $main-color;
   font-size: 18px;
@@ -60,15 +49,12 @@
   &:focus {
     color: $accent-color;
   }
-
   @media screen and (min-width: 1340px) {
     font-size: 20px;
   }
 }
-
 .header__btn {
   display: none;
-
   @media screen and (min-width: 992px) {
     cursor: pointer;
     display: block;
@@ -80,7 +66,8 @@
     border: 2px solid #263238;
     background: none;
     transition: all 250ms ease-in-out;
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       color: $accent-color;
       border: 2px solid $accent-color;
     }
