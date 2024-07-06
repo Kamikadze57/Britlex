@@ -2,9 +2,7 @@
   flex-direction: column;
   display: flex;
   justify-content: space-between;
-  @media screen and (min-width: 575px) {
-    align-items: center;
-  }
+  align-items: center;
   @media screen and (min-width: 767px) {
     flex-direction: row;
   }
