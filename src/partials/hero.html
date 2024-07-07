@@ -19,11 +19,14 @@
         <button class="hero__button">Get started</button>
       </li>
       <li class="hero__cell">
-        <img
-          class="hero__img"
-          src="./images/hero/learning_1340.png"
-          alt="learning"
-        />
+        <picture class="hero__picture">
+          <source srcset="./images/hero/learning_1340.png 1x, ./images/hero/learning_1340@2x.png 2x" media="(min-width:1340px)" sizes="661px"/>
+          <source srcset="./images/hero/learning_992.png 1x, ./images/hero/learning_992@2x.png 2x" media="(min-width:992px)" sizes="460px"/>
+          <source srcset="./images/hero/learning_767.png 1x, ./images/hero/learning_767@2x.png 2x" media="(min-width:767px)" sizes="352px"/>
+          <source srcset="./images/hero/learning_575.png 1x, ./images/hero/learning_575@2x.png 2x" media="(min-width:575px)" sizes="424px"/>
+          <source srcset="./images/hero/learning_320.png 1x, ./images/hero/learning_320@2x.png 2x" media="(max-width:574px)" sizes="299px"/>
+          <img class="hero__img" src="./images/hero/learning_1340.png" alt="learning"/>
+        </picture>
       </li>
     </ul>
   </div>
