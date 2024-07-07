@@ -1,16 +1,23 @@
 <section class="contact-us">
     <div class="container">
+        <h2 class="contact-us__title">Contact Us</h2>
         <ul class="contact-us__list list">
-            <li class="contact-us__cell">
-                <img class="contact-us__img" src="./images/contact_us/contact_us_1340@2x.png" alt="contact_us">
+            <li class="contact-us__item first__picture">
+                <picture class="contact-us__picture">
+                    <source srcset="./images/contact_us/contact_us_1340.png 1x, ./images/contact_us/contact_us_1340@2x.png 2x" media="(min-width:1340px)" sizes="477px"/>
+                    <source srcset="./images/contact_us/contact_us_992.png 1x, ./images/contact_us/contact_us_992@2x.png 2x" media="(min-width:992px)" sizes="312px"/>
+                    <source srcset="./images/contact_us/contact_us_767.png 1x, ./images/contact_us/contact_us_767@2x.png 2x" media="(min-width:767px)" sizes="233px"/>
+                    <source srcset="./images/contact_us/contact_us_575.png 1x, ./images/contact_us/contact_us_575@2x.png 2x" media="(min-width:575px)" sizes="358px"/>
+                    <source srcset="./images/contact_us/contact_us_320.png 1x, ./images/contact_us/contact_us_320@2x.png 2x" media="(max-width:574px)" sizes="253px"/>
+                    <img class="contact-us__img" src="./images/contact_us/contact_us_1340.png"/>
+                </picture>
             </li>
-            <li class="contact-us__cell">
-                <h2 class="contact-us__title">Contact Us</h2>
-                <p class="contact-us__text">Discover your current English level by taking our free online English test.Sign <br> up to our newsletter for learning tips and free resources</p>
-                <form class="contact-us__form">
-                    <input name="email" id="email" class="contact-us__input" type="email" placeholder="Enter Your E-mail">
-                    <button class="contact-us__button">Subscribe</button>
-                </form>
+            <li class="contact-us__item">
+                <p class="contact-us__text">Discover your current English level by taking our free online English test. Sign up to our newsletter for learning tips and free resource</p>
+                    <form class="contact-us__form">
+                        <input name="email" id="email" class="contact-us__input" type="email" placeholder="Enter Your E-mail">
+                        <button class="contact-us__button" type="button">Subscribe</button>
+                    </form>
             </li>
         </ul>
     </div>

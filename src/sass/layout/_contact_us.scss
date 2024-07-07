@@ -1,41 +1,165 @@
-.contact-us__list {
-  @include flex(135px);
-}
-.contact-us__img {
-  width: 445px;
-  height: 400px;
+.contact-us {
+  padding-top: 72px;
+  padding-bottom: 57px;
+  @media screen and (min-width: 575px) {
+    padding-top: 163px;
+    padding-bottom: 144px;
+  }
+  @media screen and (min-width: 767px) {
+    padding-top: 65px;
+    padding-bottom: 112px;
+  }
+  @media screen and (min-width: 992px) {
+    padding-top: 145px;
+    padding-bottom: 157px;
+  }
+  @media screen and (min-width: 1340px) {
+    padding-top: 257px;
+    padding-bottom: 133px;
+  }
 }
 .contact-us__title {
-  color: $add-black;
-  font-size: 48px;
-  font-weight: 600;
-  line-height: 80px;
+  font-size: 24px;
+  margin-bottom: 50px;
+  text-align: center;
+  @media screen and (min-width: 575px) {
+    font-size: 30px;
+    margin-bottom: 85px;
+  }
+  @media screen and (min-width: 767px) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 992px) {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 1340px) {
+    font-size: 48px;
+    margin-bottom: 65px;
+  }
+}
+.contact-us__list {
+  @include flex(38px);
+  flex-direction: column;
+  @media screen and (min-width: 575px) {
+    gap: 34px;
+  }
+  @media screen and (min-width: 767px) {
+    flex-direction: row;
+    gap: 36px;
+  }
+  @media screen and (min-width: 992px) {
+    gap: 110px;
+  }
+  @media screen and (min-width: 1340px) {
+    gap: 140px;
+  }
 }
 .contact-us__text {
-  @include text(20px);
-  line-height: 30px;
-  margin-top: 37px;
+  @include text(14px);
+  text-align: center;
+  margin-bottom: 31px;
+  @media screen and (min-width: 575px) {
+    font-size: 16px;
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 767px) {
+    font-size: 14px;
+    text-align: start;
+    margin-bottom: 26px;
+  }
+  @media screen and (min-width: 992px) {
+    font-size: 16px;
+    margin-bottom: 34px;
+  }
+  @media screen and (min-width: 1340px) {
+    font-size: 20px;
+    margin-bottom: 52px;
+  }
 }
 .contact-us__form {
-  @include flex(12px);
-  margin-top: 52px;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  @media screen and (min-width: 575px) {
+    flex-direction: row;
+    gap: 0;
+    justify-content: center;
+  }
+  @media screen and (min-width: 767px) {
+    gap: 6px;
+    justify-content: start;
+  }
+  @media screen and (min-width: 992px) {
+    gap: 14px;
+  }
+  @media screen and (min-width: 1340px) {
+    gap: 12px;
+  }
 }
 .contact-us__input {
-  @include text(16px);
-  line-height: 24px;
-  padding: 26px 270px 30px 33px;
-  box-sizing: border-box;
+  @include text(12px);
+  padding: 16px 26px;
+  outline: none;
   border: 1px solid $text-color;
-  border-radius: 10px;
+  border-radius: 5px;
+  transition: all 250ms ease-in-out;
+  @media screen and (min-width: 575px) {
+    margin-right: -20px;
+    @include text(13px);
+    padding: 20px 182px 20px 25px;
+    border-radius: 10px;
+  }
+  @media screen and (min-width: 767px) {
+    margin-right: 0;
+    @include text(12px);
+    padding: 16px 162px 16px 24px;
+    border-radius: 5px;
+  }
+  @media screen and (min-width: 992px) {
+    @include text(14px);
+    padding: 20px 162px 20px 38px;
+    border-radius: 10px;
+  }
+  @media screen and (min-width: 1340px) {
+    @include text(16px);
+    padding: 28px 281px 28px 30px;
+  }
+  &:hover,
+  &:focus {
+    border: 1px solid $accent-color;
+    color: $accent-color;
+  }
 }
 .contact-us__button {
-  color: white;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 30px;
-  padding: 25px 82px;
-  border-radius: 10px;
-  background: $main-color;
+  color: #fff;
+  font-size: 14px;
+  padding: 20px 110px;
+  background-color: $main-color;
+  border: 2px solid $main-color;
+  border-radius: 5px;
+  cursor: pointer;
+  @media screen and (min-width: 575px) {
+    padding: 18px 56px;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+  @media screen and (min-width: 767px) {
+    padding: 15px 40px;
+    border-radius: 5px;
+    font-size: 13px;
+  }
+  @media screen and (min-width: 992px) {
+    padding: 18px 56px;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+  @media screen and (min-width: 1340px) {
+    padding: 25px 81px;
+    border-radius: 10px;
+    font-size: 20px;
+  }
+  transition: all 250ms ease-in-out;
   &:hover,
   &:focus {
     color: $main-color;
@@ -43,6 +167,6 @@
     background: white;
   }
   &:active {
-    transform: scale(0.97);
+    transform: scale(0.99);
   }
 }
