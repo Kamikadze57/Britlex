@@ -72,14 +72,15 @@
     max-height: 534px;
   }
   @media screen and (min-width: 767px) {
-    min-height: 662px;
+    max-height: 662px;
   }
   @media screen and (min-width: 992px) {
-    min-width: 303px;
+    max-width: 303px;
+    max-height: 729px;
   }
   @media screen and (min-width: 1340px) {
     min-width: 435px;
-    min-height: 800px;
+    max-height: 811px;
   }
 }
 .skills-item__container {
@@ -111,7 +112,7 @@
     gap: 10px;
   }
   @media screen and (min-width: 992px) {
-    min-width: 616px;
+    min-width: 618px;
   }
   @media screen and (min-width: 992px) {
     min-width: 885px;
@@ -128,31 +129,41 @@
     max-height: 440px;
   }
   @media screen and (min-width: 992px) {
-    min-width: 303px;
+    width: 303px;
   }
   @media screen and (min-width: 1340px) {
     min-width: 435px;
   }
 }
 .skills__img--size1 {
-  @media screen and (min-width: 992px) {
-    width: 260px;
+  @media screen and (min-width: 1340px) {
+    width: 390px;
   }
 }
 .skills__img--size2 {
   @media screen and (min-width: 992px) {
-    width: 205px;
+    width: 226px;
     margin: 0 auto;
+  }
+  @media screen and (min-width: 1340px) {
+    width: 280px;
   }
 }
 .skills__img--size3 {
   @media screen and (min-width: 992px) {
-    width: 243px;
+    width: 258px;
+  }
+  @media screen and (min-width: 1340px) {
+    width: 340px;
   }
 }
 .skills__img--size4 {
+  @media screen and (min-width: 767px) {
+    width: 303px;
+  }
   @media screen and (min-width: 992px) {
-    width: 254px;
+    min-width: 254px;
+    padding-right: 20px;
   }
 }
 .skills__img--mg1 {
@@ -163,11 +174,7 @@
     margin-top: 0;
   }
 }
-// .skills__img--mg2 {
-//   @media screen and (min-width: 767px) {
-//     margin-top: 14px;
-//   }
-// }
+
 .skills__img--mg3 {
   @media screen and (min-width: 767px) {
     margin-top: 36px;
@@ -186,6 +193,17 @@
   @media screen and (min-width: 767px) {
     position: static;
   }
+  @media screen and (min-width: 992px) {
+    max-width: 303px;
+  }
+}
+.skills__card--hg {
+  @media screen and (min-width: 992px) {
+    max-width: 303px;
+  }
+  @media screen and (min-width: 992px) {
+    max-height: 531px;
+  }
 }
 .skills__card--flex {
   @media screen and (min-width: 767px) {
@@ -193,8 +211,13 @@
     flex-grow: 1;
     align-items: center;
   }
+  @media screen and (min-width: 992px) {
+    max-width: 618px;
+    min-height: 235px;
+  }
   @media screen and (min-width: 1340px) {
-    min-height: 350px;
+    max-height: 350px;
+    max-width: 885px;
   }
 }
 .skills__wrapper {
@@ -245,7 +268,10 @@
 }
 .skills__subtitle--mg4 {
   @media screen and (min-width: 767px) {
-    margin-top: 30px;
+    margin-top: 15px;
+  }
+  @media screen and (min-width: 1340px) {
+    margin-top: 0;
   }
 }
 .skills__box {
@@ -270,15 +296,21 @@
     max-height: 280px;
   }
 }
+.skills__box--hg2 {
+  @media screen and (min-width: 992px) {
+    min-height: 155px;
+  }
+  @media screen and (min-width: 1340px) {
+    min-height: 155px;
+  }
+}
 .skills__box--hg4 {
   @media screen and (min-width: 767px) {
     height: 125px;
   }
   @media screen and (min-width: 992px) {
     height: 137px;
-  }
-  @media screen and (min-width: 1340px) {
-    min-height: 300px;
+    max-width: 430px;
   }
 }
 .skills__text {
@@ -301,6 +333,9 @@
   }
   @media screen and (min-width: 992px) {
     min-width: 287px;
+  }
+  @media screen and (min-width: 1340px) {
+    min-width: 335px;
   }
 }
 .skills__text--hg {
