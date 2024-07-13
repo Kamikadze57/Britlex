@@ -44,13 +44,10 @@
     margin-bottom: 40px;
   }
   @media screen and (min-width: 767px) {
-    margin-bottom: 35px;
+    margin-bottom: -5px;
   }
   @media screen and (min-width: 992px) {
     margin-bottom: 30px;
-  }
-  @media screen and (min-width: 1340px) {
-    margin-bottom: 55px;
   }
 }
 .pricing__second-img {
@@ -84,7 +81,7 @@
   @media screen and (min-width: 575px) {
     width: 390px;
   }
-  @media screen and (min-width: 767px){
+  @media screen and (min-width: 767px) {
     align-items: flex-start;
     width: 223px;
   }
@@ -120,6 +117,17 @@
     font-size: 30px;
   }
 }
+.pricitng-title__carry {
+  @media screen and (min-width: 767px) {
+    max-width: 112px;
+  }
+  @media screen and (min-width: 992px) {
+    max-width: 273px;
+  }
+  @media screen and (min-width: 1340px) {
+    max-width: 375px;
+  }
+}
 .pricing-list__text {
   @include text(13px);
   text-align: center;
@@ -129,7 +137,7 @@
     font-size: 14px;
     margin-bottom: 31px;
   }
-  @media screen and (min-width: 767px){
+  @media screen and (min-width: 767px) {
     text-align: start;
     margin-bottom: 35px;
   }
@@ -145,16 +153,49 @@
   width: 179px;
   height: 37px;
   border-radius: 5px;
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
   @include flex(8px);
   align-items: center;
   justify-content: center;
   @media screen and (min-width: 575px) {
     width: 205px;
-  height: 45px;
+    height: 45px;
   }
   @media screen and (min-width: 1340px) {
     width: 240px;
+  }
+}
+.pricing__first {
+  @media screen and (min-width: 767px) {
+    margin-top: 23px;
+  }
+  @media screen and (min-width: 992px) {
+    margin-top: -35px;
+  }
+  @media screen and (min-width: 1340px) {
+    margin-top: 29px;
+  }
+}
+.pricing__second {
+  @media screen and (min-width: 767px) {
+    margin-top: 44px;
+  }
+  @media screen and (min-width: 992px) {
+    margin-top: 28px;
+  }
+  @media screen and (min-width: 1340px) {
+    margin-top: 59px;
+  }
+}
+.pricing__third {
+  @media screen and (min-width: 767px) {
+    margin-top: 49px;
+  }
+  @media screen and (min-width: 992px) {
+    margin-top: 10px;
+  }
+  @media screen and (min-width: 1340px) {
+    margin-top: 58px;
   }
 }
 .pricing-price__value {
@@ -168,7 +209,7 @@
     font-size: 24px;
   }
   @media screen and (min-width: 1340px) {
-   font-size: 30px;
+    font-size: 30px;
   }
 }
 .pricing-price__text {

@@ -14,7 +14,7 @@
     padding-bottom: 157px;
   }
   @media screen and (min-width: 1340px) {
-    padding-top: 257px;
+    padding-top: 207px;
     padding-bottom: 133px;
   }
 }
@@ -28,14 +28,18 @@
   }
   @media screen and (min-width: 767px) {
     margin-bottom: 30px;
+    position: absolute;
+    left: 38vh;
   }
   @media screen and (min-width: 992px) {
     font-size: 36px;
     margin-bottom: 40px;
+    left: 41vw;
   }
   @media screen and (min-width: 1340px) {
     font-size: 48px;
     margin-bottom: 65px;
+    left: 43.5vw;
   }
 }
 .contact-us__list {
